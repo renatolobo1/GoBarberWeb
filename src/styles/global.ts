@@ -9,7 +9,7 @@ export default createGlobalStyle`
 }
 
 body {
-  background: #312E38; //#001b31
+  background: #312E38; //#001b31 Marechais
   color: #FFF;
   -webkit-font-smoothing: antialiased;
 }
