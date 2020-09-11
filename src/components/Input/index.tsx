@@ -45,6 +45,8 @@ const Input: React.FC<InterProps> = ({name, icon: Icon, ...rest}) => {
         ref={inputRef} 
         {...rest}
       />
+
+      {error}
   </Container>
   );
 };
