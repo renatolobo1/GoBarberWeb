@@ -3,7 +3,7 @@ import {FiArrowLeft, FiMail, FiUser, FiLock} from 'react-icons/fi';
 import {FormHandles} from '@unform/core';
 import {Form} from '@unform/web';
 import * as Yup from 'yup';
-import getValidationsErrors from '../../utils/GetValidationErrors';
+import getValidationsErrors from '../../utils/getValidationErrors';
 
 import logoImg from '../../assets/logo.svg';
 
@@ -31,7 +31,9 @@ const SignUp: React.FC = () => {
       
       
     } catch (err){
+
       const errors = getValidationsErrors(err);
+      
       formRef.current?.setErrors(errors);
      }
   }, []);
