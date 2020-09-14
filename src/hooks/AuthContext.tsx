@@ -44,6 +44,7 @@ export const AuthProvider: React.FC = ({children}) => {
     localStorage.setItem('@GoBarber:user', JSON.stringify(user));
 
     setData({token, user});
+    // console.log(response.data);
   }, []);
 
   const signOut = useCallback(()=> {
